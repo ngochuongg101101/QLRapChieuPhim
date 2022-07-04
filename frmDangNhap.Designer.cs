@@ -55,22 +55,23 @@ namespace QLRapChieuPhim
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLogin.Location = new System.Drawing.Point(104, 177);
+            this.btnLogin.Location = new System.Drawing.Point(158, 205);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(86, 32);
+            this.btnLogin.Size = new System.Drawing.Size(83, 32);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPass
             // 
             this.txtPass.BackColor = System.Drawing.Color.Teal;
             this.txtPass.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtPass.Location = new System.Drawing.Point(104, 108);
+            this.txtPass.Location = new System.Drawing.Point(158, 136);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(136, 26);
+            this.txtPass.Size = new System.Drawing.Size(133, 26);
             this.txtPass.TabIndex = 3;
             this.txtPass.UseSystemPasswordChar = true;
             // 
@@ -79,9 +80,9 @@ namespace QLRapChieuPhim
             this.txtUser.BackColor = System.Drawing.Color.Teal;
             this.txtUser.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtUser.Location = new System.Drawing.Point(104, 54);
+            this.txtUser.Location = new System.Drawing.Point(158, 82);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(136, 26);
+            this.txtUser.Size = new System.Drawing.Size(133, 26);
             this.txtUser.TabIndex = 2;
             // 
             // panel1
@@ -99,21 +100,22 @@ namespace QLRapChieuPhim
             this.panel1.Controls.Add(this.txtPass);
             this.panel1.Controls.Add(this.txtUser);
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panel1.Location = new System.Drawing.Point(177, 112);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(446, 227);
+            this.panel1.Size = new System.Drawing.Size(780, 419);
             this.panel1.TabIndex = 6;
             // 
             // ckbShowPass
             // 
             this.ckbShowPass.AutoSize = true;
             this.ckbShowPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ckbShowPass.Location = new System.Drawing.Point(104, 140);
+            this.ckbShowPass.Location = new System.Drawing.Point(158, 168);
             this.ckbShowPass.Name = "ckbShowPass";
             this.ckbShowPass.Size = new System.Drawing.Size(109, 17);
             this.ckbShowPass.TabIndex = 7;
             this.ckbShowPass.Text = "Hiển thị mật khẩu";
             this.ckbShowPass.UseVisualStyleBackColor = true;
+            this.ckbShowPass.CheckedChanged += new System.EventHandler(this.ckbShowPass_CheckedChanged);
             // 
             // label2
             // 
@@ -121,7 +123,7 @@ namespace QLRapChieuPhim
             this.label2.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(3, 114);
+            this.label2.Location = new System.Drawing.Point(57, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 6;
@@ -133,7 +135,7 @@ namespace QLRapChieuPhim
             this.label1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(3, 60);
+            this.label1.Location = new System.Drawing.Point(57, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 15);
             this.label1.TabIndex = 6;
@@ -143,7 +145,7 @@ namespace QLRapChieuPhim
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(289, 39);
+            this.pictureBox3.Location = new System.Drawing.Point(556, 82);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(151, 150);
@@ -157,9 +159,9 @@ namespace QLRapChieuPhim
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(236, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(290, 82);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -168,9 +170,9 @@ namespace QLRapChieuPhim
             this.pictureBox2.BackColor = System.Drawing.Color.Teal;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(236, 108);
+            this.pictureBox2.Location = new System.Drawing.Point(290, 136);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 27);
+            this.pictureBox2.Size = new System.Drawing.Size(30, 27);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -182,13 +184,14 @@ namespace QLRapChieuPhim
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnExit.Location = new System.Drawing.Point(207, 177);
+            this.btnExit.Location = new System.Drawing.Point(261, 205);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(62, 32);
+            this.btnExit.Size = new System.Drawing.Size(59, 32);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmDangNhap
             // 

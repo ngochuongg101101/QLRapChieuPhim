@@ -45,13 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\AccountEmployeeDAO.cs" />
+    <Compile Include="DAO\ClientDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\GheDAO.cs" />
     <Compile Include="DAO\LoaigheDAO.cs" />
     <Compile Include="DAO\SuatchieuDAO.cs" />
+    <Compile Include="DTO\AboutBill.cs" />
+    <Compile Include="DTO\AboutFilmGenre.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\Client.cs" />
+    <Compile Include="DTO\Employee.cs" />
+    <Compile Include="DTO\FilmGenre.cs" />
+    <Compile Include="DTO\Food.cs" />
     <Compile Include="DTO\Ghe.cs" />
     <Compile Include="DTO\Loaighe.cs" />
+    <Compile Include="DTO\Movie.cs" />
+    <Compile Include="DTO\RoomCinema.cs" />
     <Compile Include="DTO\Suatchieu.cs" />
+    <Compile Include="DTO\Ticket.cs" />
     <Compile Include="frmBanVe.cs">
       <SubType>Form</SubType>
     </Compile>
