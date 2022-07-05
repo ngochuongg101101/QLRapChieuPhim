@@ -26,6 +26,10 @@ namespace QLRapChieuPhim
             string query1 = "Select * from PHIM where Trangthai=N'Đang chiếu'";
             grdData.DataSource = DataProvider.Instance.ExecuteQuery(query1);
             grdData.Refresh();
+
+            panel3.Visible = false;
+            flpGhe.Visible = false;
+            btnThanhtoan.Visible = false;
         }
 
         private void grdData_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -35,6 +39,7 @@ namespace QLRapChieuPhim
             //and Ngaychieu ='"+ Convert.ToDateTime(dtpNgayban.Text) +"'";
             grdData1.DataSource = DataProvider.Instance.ExecuteQuery(query2);
             grdData1.Refresh();
+
         }
 
         private void btnChonghe_Click(object sender, EventArgs e)
@@ -59,7 +64,7 @@ namespace QLRapChieuPhim
                 switch (item.Trangthai)
                 {
                     case "Trống":
-                        btn.BackColor = Color.Purple;
+                        btn.BackColor = Color.White;
                         /* đoạn này không work
                         switch (item.Maloai)
                         {
@@ -84,7 +89,9 @@ namespace QLRapChieuPhim
                 
                 flpGhe.Controls.Add(btn);
             }
-            pnChonghe.Visible = true;
+            panel3.Visible = true;
+            flpGhe.Visible = true;
+
         }
 
         private void btn_Click(object sender, EventArgs e)
@@ -113,13 +120,14 @@ namespace QLRapChieuPhim
                     (sender as Button).BackColor = Color.Yellow;
                     break;
             }
+            btnThanhtoan.Visible = true;
         }
 
         private void btnThanhtoan_Click(object sender, EventArgs e)
         {
             string query3 = "Select Maghe, Tenghe, Tenloai, Dongia from GHE,LOAIGHE where GHE.Maloai=LOAIGHE.Maloai and Maghe in ";
-            grdData2.DataSource = DataProvider.Instance.ExecuteQuery(query3);
-            grdData2.Refresh();
+
         }
+
     }
 }

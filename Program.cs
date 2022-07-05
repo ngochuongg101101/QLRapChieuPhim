@@ -16,7 +16,7 @@ namespace QLRapChieuPhim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmBanVe());
+            Application.Run(new frmNhanvien());
         }
     }
 }
